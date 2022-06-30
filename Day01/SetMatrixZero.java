@@ -1,3 +1,8 @@
+/**
+ * Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 
+ * 0's.
+ */
+
 package Day01;
 
 public class SetMatrixZero {
@@ -23,7 +28,7 @@ public class SetMatrixZero {
 
         // We will traverse the matrix linearly
         for (int i = 0; i < rows; i++) {
-            // if elemnt of 1st column of ith col is 0
+            // if elemnt of 1st column of ith row is 0
             if (matrix[i][0] == 0)
                 isColumn = true;
             for (int j = 1; j < cols; j++){
