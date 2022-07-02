@@ -25,6 +25,7 @@ public class PascalsTriangle {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         List<Integer> row;
         List<Integer> previous = null;
+        
         for (int i = 0; i < numRows; i++) {
             row = new ArrayList<>();
             for (int j = 0; j <= i; j++) {
