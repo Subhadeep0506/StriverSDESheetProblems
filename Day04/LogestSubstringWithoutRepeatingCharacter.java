@@ -20,8 +20,8 @@ public class LogestSubstringWithoutRepeatingCharacter {
         int maxLength = 0;
         // HashSet<Character> set = new HashSet<>();
         HashMap<Character, Integer> map = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            // character doesn't exist
+        for (int i = 0; i < s.length(); i++) { //"abba" 
+            // character exists
             if (map.containsKey(s.charAt(i))) {
                 start = Math.max(map.get(s.charAt(i)) + 1, start);
             }

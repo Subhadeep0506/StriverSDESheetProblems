@@ -1,6 +1,5 @@
 package InfySamples;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,18 +23,18 @@ public class InterestingString {
             }
         }
         for (Map.Entry<Character, Integer> set: map.entrySet()) {
-            if (set.getValue() > largest) {
-                largest = set.getValue();
-            }
+            // if (set.getValue() > largest) {
+            //     largest = set.getValue();
+            // }
             if (set.getValue() < smallest) {
                 smallest = set.getValue();
             }
         }
         
-        if (smallest == largest) {
-            smallest = 1;
-            return largest / smallest;
-        }
+        // if (smallest == largest) {
+        //     smallest = 1;
+        //     return largest / smallest;
+        // }
 
         return smallest;
     }
