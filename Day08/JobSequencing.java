@@ -26,7 +26,7 @@ public class JobSequencing {
                 maxDeadline = job.deadline;
         }
         
-        // 2nd make an array of that maxProfit size and fill it woth -1s.
+        // 2nd make an array of that maxProfit size and fill it with -1s.
         int[] res = new int[maxDeadline + 1];
         Arrays.fill(res, -1);
         // 3rd sort the jobs based on profits. Highest profit comes first
