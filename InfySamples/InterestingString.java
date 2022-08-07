@@ -10,7 +10,7 @@ public class InterestingString {
     }
 
     public static int interestingString(String text) {
-        int largest = 1, smallest = text.length();
+        int smallest = text.length();
 
         HashMap<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < text.length(); i++) {
