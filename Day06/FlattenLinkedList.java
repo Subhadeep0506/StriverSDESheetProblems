@@ -27,8 +27,6 @@
 
 package Day06;
 
-import Day06.Node;
-
 public class FlattenLinkedList {
     Node merge(Node a, Node b){
         if(a == null)
