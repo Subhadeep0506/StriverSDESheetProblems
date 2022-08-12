@@ -71,7 +71,9 @@ dp[i] += dp[j] * dp[map.get(rem)] = 1 * 1 = 1
 dp[i] = dp[i] + 1 = 2 + 1 = 3
 ------ dp = [1, 2, 1, 3] ----------
 */
+package LeetCode.Aug22;
 
+import java.util.*;
 
 class Solution {
     public int numFactoredBinaryTrees(int[] arr) {
@@ -111,7 +113,6 @@ class Solution {
         }
         
         return (int) (res % 1000000007);
-        
     }
 }
 
