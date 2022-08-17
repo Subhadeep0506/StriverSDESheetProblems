@@ -18,3 +18,6 @@ def maxMin(k, arr):
 
 arr = [100, 200, 300, 350, 400, 401, 402]
 k = 2
+i = 1e-6
+
+print(type(i))
