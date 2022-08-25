@@ -4,7 +4,6 @@ import java.util.*;
 
 class Test {
     public static void main(String[] args) {
-        String s = "ace";
-        System.out.println();
+        System.out.println(Math.log10(243) / Math.log10(3));
     }
 }
