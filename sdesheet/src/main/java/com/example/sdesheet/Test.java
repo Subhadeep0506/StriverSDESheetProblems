@@ -4,6 +4,10 @@ import java.util.*;
 
 class Test {
     public static void main(String[] args) {
-        System.out.println(Math.log10(243) / Math.log10(3));
+        TreeSet<Integer> set = new TreeSet<>();
+        set.add(0);
+        // set.add(-5);
+        Integer num = set.ceiling(6);
+        System.out.println(num);
     }
 }
