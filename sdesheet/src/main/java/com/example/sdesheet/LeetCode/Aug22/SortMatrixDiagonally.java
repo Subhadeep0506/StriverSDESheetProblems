@@ -20,7 +20,7 @@ public class SortMatrixDiagonally {
         
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                map.putIfAbsent(i - j, new PriorityQueue());
+                map.putIfAbsent(i - j, new PriorityQueue<>());
                 map.get(i - j).add(mat[i][j]);
             }
         }
