@@ -25,6 +25,7 @@ class Test2 {
             arr[i] = sc.nextInt();
         }
         System.out.println(distLaddoo(n, arr));
+        sc.close();
     }
 
     public static long distLaddoo(int n, int[] arr) {
