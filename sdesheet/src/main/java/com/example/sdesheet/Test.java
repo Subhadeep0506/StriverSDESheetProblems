@@ -3,51 +3,51 @@ package com.example.sdesheet;
 import java.util.*;
 
 class Test {
-    public static int isMagic(int n) {
-        if (n % 9 == 1)
-            return 1;
-        else 
-            return 0;
-    }
-
-    // public static void main(String[] args) {
-    //     int n = 83557;
-    //     System.out.println(isMagic(n));
-    // }
-}
-
-class Test2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        for (int  i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
-        System.out.println(distLaddoo(n, arr));
-        sc.close();
+        Random random = new Random();
+        System.out.println(random.nextInt(3));
     }
 
-    public static long distLaddoo(int n, int[] arr) {
-        int[] laddoos = new int[n];
-        Arrays.fill(laddoos, 1);
-        for (int i = 0; i < n - 1; i++) {
-            if (arr[i + 1] > arr[i]){
-                laddoos[i + 1] = laddoos[i] + 1;
+    public Node connect(Node root) {
+        if(root == null) return null;
+        Node curr = root;
+        Node nxt = root.left;
+        
+        while(curr != null && nxt != null){
+            curr.left.next = curr.right;
+            
+            if(curr.right != null){
+                curr.right.next = curr.next.left;
+            }
+            
+            curr = curr.next;
+            if(curr == null){
+                curr = nxt;
+                nxt = curr.left;
             }
         }
         
-        for (int i = n - 1; i > 0; i--) {
-            if (arr[i - 1] > arr[i] && laddoos[i - 1] <= laddoos[i])
-                laddoos[i - 1] = laddoos[i] + 1;
-        }
-
-        long total = 0;
-
-        for(int c : laddoos){
-            total += (long)c;
-        }
-    
-        return total;
+        return root;
+        
     }
 }
+
+class Node {
+    public int val;
+    public Node left;
+    public Node right;
+    public Node next;
+
+    public Node() {}
+    
+    public Node(int _val) {
+        val = _val;
+    }
+
+    public Node(int _val, Node _left, Node _right, Node _next) {
+        val = _val;
+        left = _left;
+        right = _right;
+        next = _next;
+    }
+}   
