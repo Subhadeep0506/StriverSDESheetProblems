@@ -1,3 +1,14 @@
+/*
+ * We are given an array ‘ARR’ with N positive integers. We need to find if there 
+ * is a subset in “ARR” with a sum equal to K. If there is, return true else return 
+ * false.
+ * 
+ * i/p - {1, 2, 3, 4}
+ * k = 4
+ * 
+ * o/p = {1, 3}; {4}
+ */
+
 package com.example.sdesheet.Day26;
 
 import java.util.*;
