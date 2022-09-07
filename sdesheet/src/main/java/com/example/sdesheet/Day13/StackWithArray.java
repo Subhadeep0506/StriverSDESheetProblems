@@ -9,9 +9,10 @@ public class StackWithArray {
         stack.push(2);
         stack.push(9);
         System.out.println(stack.pop());
-        stack.push(7);
-        stack.push(4);
         System.out.println(stack.top());
+        stack.push(7);
+        System.out.println(stack.top());
+        stack.push(4);
         stack.push(6);
     }
 }

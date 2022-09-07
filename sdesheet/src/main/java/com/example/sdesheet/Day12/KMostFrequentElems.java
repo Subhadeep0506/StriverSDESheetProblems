@@ -20,6 +20,7 @@ public class KMostFrequentElems {
         
         int[] res = new int[k];
         int i = 0;
+        
         // now pop out the first k elements from queue into result array
         while (i < k) {
             res[i++] = queue.poll().getKey();

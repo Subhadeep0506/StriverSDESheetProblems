@@ -14,7 +14,7 @@ class Pair {
 }
 
 public class MergeKSortedArrays {
-    public static ArrayList<Integer> mergeKSortedArrays(ArrayList<ArrayList<Integer>> kArrays, int k) {
+    public ArrayList<Integer> mergeKSortedArrays(ArrayList<ArrayList<Integer>> kArrays, int k) {
         ArrayList<Integer> res = new ArrayList<>();
         
         if (kArrays == null || kArrays.size() == 0)
