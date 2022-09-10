@@ -2,7 +2,7 @@ package com.example.sdesheet.Day13;
 
 import java.util.*;
 
-public class QueueWithStack {
+class MyQueue {
 	Stack<Integer> input;
     Stack<Integer> output;
     

@@ -2,7 +2,7 @@ package com.example.sdesheet.Day13;
 
 import java.util.*;
 
-public class StackWithQueue {
+class MyStack {
 	Queue<Integer> queue;
     public MyStack() {
         queue = new LinkedList<>();

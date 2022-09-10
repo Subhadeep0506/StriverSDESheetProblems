@@ -2,7 +2,7 @@ package com.example.sdesheet.Day13;
 
 public class StackWithArray {
     public static void main(String[] args) {
-        Stack stack = new Stack();
+        StackOwn stack = new StackOwn();
         stack.push(10);
         stack.push(3);
         stack.push(12);
@@ -17,17 +17,17 @@ public class StackWithArray {
     }
 }
 
-class Stack {
+class StackOwn {
     int size;
     int arr[];
     int top;
 
-    public Stack() {
+    public StackOwn() {
         this.size = 10;
         arr = new int[size];
     }
 
-    public Stack(int size) {
+    public StackOwn(int size) {
         this.size = size;
         arr = new int[size];
     }
