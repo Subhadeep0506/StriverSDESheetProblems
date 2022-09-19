@@ -1,3 +1,5 @@
+from typing import List
+
 class StocksIII:
 	def maxProfitMemo(self, prices: List[int]) -> int:
         memo = [[[-1 for _ in range(3)] for _ in range(2)] for _ in range(len(prices))]
