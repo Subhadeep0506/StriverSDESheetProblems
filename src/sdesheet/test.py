@@ -1,5 +1,6 @@
-words = ["root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.txt(efgh)","root 4.txt(efgh)"]
+from collections import defaultdict
 
-split_path = [words[i].split() for i in range(len(words))]
+res = defaultdict(int, {0: 1, -2: 3, 1: 3, -1: 4, 2: 6})
+res = sorted(res.items())
 
-print(split_path)
+print(res)
