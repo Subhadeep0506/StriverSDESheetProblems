@@ -1,3 +1,7 @@
+from typing import Optional
+from Day17.tree_node import TreeNode
+
+
 class SymmetricTree:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         if not root:
