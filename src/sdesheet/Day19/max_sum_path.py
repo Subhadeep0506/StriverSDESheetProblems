@@ -1,3 +1,6 @@
+from typing import *
+from sdesheet.Day17.tree_node import TreeNode
+
 class MaxSumPath:
     def maxPathSum(self, root: Optional[TreeNode]) -> int:
         self.max_sum = float("-inf")
