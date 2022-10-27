@@ -1,5 +1,13 @@
+from typing import List
+
 class HouseRobberII:
-	def rob(self, nums: List[int]) -> int:
+    """
+    This problem is solved by considering the houses in 2 variations
+    First we find the amount robber aquires by robbing houses from index 1 to last
+    Then he considers houses from index 0 to second last
+    i.e. 1st: 0 to n - 2, then 1 to n - 1
+    """
+    def rob(self, nums: List[int]) -> int:
         n = len(nums)
         if n == 1:
             return nums[0]

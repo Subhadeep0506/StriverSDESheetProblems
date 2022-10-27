@@ -22,14 +22,13 @@ class HouseRobber:
 	# ==========================Tabulation==============================
 	def house_robber_tabu(self, nums):
 		n = len(nums)
-        memo = [-1 for  _ in range(n)]
-        memo[0] = nums[0]
+		memo = [-1 for  _ in range(n)]
+		memo[0] = nums[0]
+		for index in range(1, n):
+			take = nums[index]
+			if index - 2 >= 0:
+				take += memo[index - 2]
+			not_take = memo[index - 1]
+			memo[index] = max(take, not_take)
         
-        for index in range(1, n):
-            take = nums[index]
-            if index - 2 >= 0:
-                take += memo[index - 2]
-            not_take = memo[index - 1]
-            memo[index] = max(take, not_take)
-            
-        return memo[n - 1]
+		return memo[n - 1]
