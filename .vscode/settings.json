@@ -4,5 +4,13 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "sqlitedb",
+            "database": "/home/subhadeep/Documents/SQL/SQLite Databases/sqlite-sakila.db"
+        }
+    ]
 }
