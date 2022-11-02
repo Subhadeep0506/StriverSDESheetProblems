@@ -1,23 +1,20 @@
-from collections import defaultdict
+from typing import List
 
-def terrorist(N, M, AB):
-    n = len(AB)
-    G = defaultdict(list)
-    for i in range(n):
-        for j in range(n):
-            if AB[i][j]:
-                G[i].append(j)
-    def dfs(v):
-        if v in visited: return
-        visited.add(v)
-        for w in G[v]:
-            dfs(w)
 
-    visited = set()
-    res =  []
-    for v in range(n):
+def minMutation(start: str, end: str, bank: List[str]) -> int:
         count = 0
-        if v not in visited:
-            dfs(v)
-            count += 1
-    return res
+        for i in range(len(start)):
+            if start[i] != end[i]:
+                temp = start[:i] + end[i] + start[i + 1:]
+                start = temp
+                print(start)
+                if temp in bank:
+                    count += 1
+        
+        return count
+
+
+start = "AAAAACCC"
+end = "AACCCCCC"
+bank = ["AAAACCCC","AAACCCCC","AACCCCCC"]
+print("and:", minMutation(start, end, bank))
