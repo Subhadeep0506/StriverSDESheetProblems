@@ -1,15 +1,20 @@
-package sdesheet;
-
 import java.util.*;
 
 class Test {
-    public String helper(String s, int n, int k){
-        TreeMap<Integer> map = new TreeMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            map.put(c, map.getOrDefault(c, 0) + 1);
-        }
+    public void calculateMarks() {
+        double maths, science, english;
+        System.out.println("Enter marks of Maths, Science and English: ")
+        Scanner sc = new Scanner(System.in);
+        maths = sc.nextDouble();
+        science = sc.nextDouble();
+        english = sc.nextDouble();
 
-        
+        double average = (maths + science + english) / 3.0;
+        if (average > 85) {
+            System.out.println("Well Done");
+        }
+        else {
+            System.out.println("Work Hard");
+        }
     }
 }
