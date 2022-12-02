@@ -1,3 +1,6 @@
+import random
+
+
 def choseChefs(chefs) -> int:
     time_a, time_b, time_c = 0, 0, 0
     for chef, times in chefs.items():
@@ -28,3 +31,6 @@ if __name__ == "__main__":
         time = int(inp[2:])
         chefs[chf].append(time)
     print(choseChefs(chefs))
+
+    st = set()
+    st.add()
