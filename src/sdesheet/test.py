@@ -1,36 +1,25 @@
-import random
+from collections import defaultdict
 
-
-def choseChefs(chefs) -> int:
-    time_a, time_b, time_c = 0, 0, 0
+def allocateChefs(chefs) -> int:
+    timeA, timeB, timeC = 0, 0, 0
     for chef, times in chefs.items():
-        if chef == "A":
-            time_a = min(times)
-        elif chef == "B":
-            time_b = min(times)
+        minTime = min(times)
+        if chef == 'A':
+            timeA = minTime
+        elif chef == 'B':
+            timeB = minTime
         else:
-            time_c = min(times)
-    
-    if time_a + time_b < time_c:
-        return time_a + time_b
-    else: return time_c
-
+            timeC = minTime
+    return min(timeA + timeB, timeC)
 
 
 if __name__ == "__main__":
-    chefs = {
-        "A": [],
-        "B": [],
-        "C": [],
-    }
-
+    chefs = defaultdict(list)
     size = int(input())
     for _ in range(size):
         inp = input()
-        chf = inp[0]
+        chef = inp[0]
         time = int(inp[2:])
-        chefs[chf].append(time)
-    print(choseChefs(chefs))
+        chefs[chef].append(time)
 
-    st = set()
-    st.add()
+    print(allocateChefs(chefs))
