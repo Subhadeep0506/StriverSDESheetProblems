@@ -1,16 +1,14 @@
 {
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar"
-    ],
-    "python.analysis.typeCheckingMode": "off",
-    "sqltools.connections": [
-        {
-            "previewLimit": 50,
-            "driver": "SQLite",
-            "name": "sqlitedb",
-            "database": "/home/subhadeep/Documents/SQL/SQLite Databases/sqlite-sakila.db"
-        }
-    ]
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": ["lib/**/*.jar"],
+  "python.analysis.typeCheckingMode": "basic",
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "sqlitedb",
+      "database": "/home/subhadeep/Documents/SQL/SQLite Databases/sqlite-sakila.db"
+    }
+  ]
 }
