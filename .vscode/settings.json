@@ -1,14 +1,15 @@
 {
-  "java.project.sourcePaths": ["src"],
-  "java.project.outputPath": "bin",
-  "java.project.referencedLibraries": ["lib/**/*.jar"],
-  "python.analysis.typeCheckingMode": "basic",
-  "sqltools.connections": [
-    {
-      "previewLimit": 50,
-      "driver": "SQLite",
-      "name": "sqlitedb",
-      "database": "/home/subhadeep/Documents/SQL/SQLite Databases/sqlite-sakila.db"
-    }
-  ]
+  "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontWeight": "normal",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.5,
+  "editor.letterSpacing": 0,
+  "debug.console.fontSize": 12,
+  "window.commandCenter": false,
+  "workbench.preferredDarkColorTheme": "JetBrains New Dark",
+  "workbench.preferredLightColorTheme": "Monospace Light",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.formatOnSave": true,
+  "IDX.aI.enableInlineCompletion": true,
+  "IDX.aI.enableCodebaseIndexing": true
 }
